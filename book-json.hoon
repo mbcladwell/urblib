@@ -1,4 +1,5 @@
-|%                             ::https://developers.urbit.org/reference  Produce a core, [battery payload]; this file at https://developers.urbit.org/guides/additional/json-guide
+|%                             ::https://developers.urbit.org/reference  Produce a core, [battery payload];
+                               ::this file at https://developers.urbit.org/guides/additional/json-guide
 +$  book
   $:  title=@t
       author=[first=@t mid=@t last=@t]
@@ -24,13 +25,13 @@
     ==                                    :: end of :~
   --                                      :: end of core
 ++  from-js
-  =,  dejs:format
-  ^-  $-(json book)
-  %-  ot
-  :~
+  =,  dejs:format                        ::expose namespace
+  ^-  $-(json book)                      :: convert json to book;
+  %-  ot                                 ::call a gate (function)
+  :~                                     ::Typecast by explicit type label.
     [%title so]                       ::The +so functions just decode $json strings to cords.
     [%author (at ~[so so so])]        ::+at function converts a $json array to a tuple, decoding each element with the respective function given in its argument list
     [%id ni]
     [%genre so]
   ==
---
+ --
