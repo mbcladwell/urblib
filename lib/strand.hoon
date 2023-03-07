@@ -1,1 +1,1 @@
-../../base-dev/lib/strand.hoon
+rand

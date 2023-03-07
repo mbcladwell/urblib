@@ -1,1 +1,11 @@
-../../base-dev/mar/thread-done.hoon
+|_  res=*
+++  grab
+  |%
+  ++  noun  *
+  --
+++  grow
+  |%
+  ++  noun  res
+  --
+++  grad  %noun
+--

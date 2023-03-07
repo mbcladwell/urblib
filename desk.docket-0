@@ -1,0 +1,10 @@
+:~  title+'LIMS*Nucleus'
+    info+'A link to LIMS*Nucleus Web App.'
+    color+0x81.88c9
+    image+'https://github.com/mbcladwell/limsn/raw/main/limsn/pub/img/las-walpha-small.png'
+    base+'limsn'
+    glob-ames+[~zod 0v0]
+    version+[0 0 1]
+    website+'https://github.com/mbcladwell/urblimsn'
+    license+'MIT'
+==
