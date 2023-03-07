@@ -1,0 +1,10 @@
+:~  title+'Urbit Library Manager'
+    info+'Catalog your epubs'
+    color+0x81.88c9
+    image+'https://github.com/mbcladwell/urblib/raw/main/urblib/pub/img/las-walpha-small.png'
+    base+'urblib'
+    glob-ames+[~zod 0v0]
+    version+[0 0 1]
+    website+'https://github.com/mbcladwell/urblib'
+    license+'MIT'
+==
