@@ -4,7 +4,7 @@
   $:  title=@t
       author=[first=@t mid=@t last=@t]
       id=@u
-      genre=@t
+      genre=@t      
   ==
 ++  to-js                    ::Produce a normal arm.  p is the arm name, and q is any Hoon expression.  ++  p=term  q=hoon
   |=  bk=book               ::Produce a gate (a one-armed core with a sample).
@@ -17,13 +17,15 @@
     ['genre' s+genre.bk]
   ==
   ++  author
-    :-  %a                                :: :- construct 2 cell tuple
+    :-  %a                               :: :- construct 2 cell tuple
     :~                                    ::  Construct a null-terminated list
       [%s first.author.bk]               :: %s is json type string
       [%s mid.author.bk]
       [%s last.author.bk]
-    ==                                    :: end of :~
-  --                                      :: end of core
+    ==                                   :: end of :~
+  --                                     :: end of core
+
+
 ++  from-js
   =,  dejs:format                        ::expose namespace
   ^-  $-(json book)                      :: convert json to book;
